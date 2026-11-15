@@ -1,0 +1,31 @@
+name: TabVK
+version: '${version}'
+main: ir.gharri.tabVK.TabVK
+api-version: '1.21'
+authors: [BenyVK]
+website: https://www.gharri.ir
+description: All-in-one animated TAB list plugin with RankVK integration
+softdepend: [RankVK, PlaceholderAPI, LuckPerms]
+
+commands:
+  tabvk:
+    description: TabVK main command
+    aliases: [tvk]
+    usage: /tabvk help
+
+permissions:
+  tabvk.admin:
+    description: Reload + edit other players
+    default: op
+  tabvk.toggle:
+    description: Toggle header/footer for yourself
+    default: true
+  tabvk.customize.prefix:
+    description: Set own prefix
+    default: op
+  tabvk.customize.suffix:
+    description: Set own suffix
+    default: op
+  tabvk.color:
+    description: Use colors/gradients in custom prefix/suffix
+    default: op
